@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "models": {"cheap": null, "standard": null, "strong": null},
+  "codex_binary": "codex",
+  "max_codex_calls": 2,
+  "max_web_calls": 2,
+  "timeout_seconds": 900,
+  "context_limit_bytes": 40000,
+  "browser": {
+    "channel": "chrome",
+    "composer_selector": "#prompt-textarea, form[data-chatgpt-composer] [contenteditable='true'][role='textbox']",
+    "assistant_selector": "[data-message-author-role='assistant'], [data-conversation-role='assistant']",
+    "send_selector": "button[data-testid='send-button'], form[data-chatgpt-composer] button[type='submit']",
+    "stop_selector": "button[data-testid='stop-button']",
+    "error_selector": "[role='dialog'], [role='alert']",
+    "settle_seconds": 12
+  }
+}

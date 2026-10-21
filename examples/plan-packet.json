@@ -1,0 +1,13 @@
+{
+  "goal": "为 greet 增加空白清理和空名字校验",
+  "summary": ["仅修改目标工作区中的 greeting.py 和 test_greeting.py，使用标准库"],
+  "plan": [
+    {"step": 1, "action": "添加首尾空白、空名字、中文名字的测试", "target": "test_greeting.py", "success_criteria": "现有正常输入通过，新增空白/空名字用例在旧实现中失败"},
+    {"step": 2, "action": "先 strip，若为空则抛 ValueError，否则生成问候语", "target": "greeting.py:greet", "success_criteria": "python3 -m unittest -v 全部通过"}
+  ],
+  "risks": ["非字符串输入不在本次范围内"],
+  "tests": ["python3 -m unittest -v；覆盖普通名字、首尾空白、空名字和中文名字"],
+  "acceptance": ["greet('  Alice  ') 返回 Hello, Alice!", "greet('   ') 抛出 ValueError", "greet('小明') 返回 Hello, 小明!"],
+  "do_not_do": ["不安装依赖，不发布，不调用外部服务"],
+  "verdict": "proceed"
+}

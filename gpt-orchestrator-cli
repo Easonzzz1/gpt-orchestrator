@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from gpt_orchestrator.cli import main
+raise SystemExit(main())

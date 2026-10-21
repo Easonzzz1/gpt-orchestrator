@@ -1,0 +1,4 @@
+{
+  "superpowers": {"repository": "https://github.com/obra/superpowers.git", "commit": "b739a8af570e10a95898f2bdf6cec97467fa6c12", "license": "MIT"},
+  "chatgpt-use": {"repository": "https://github.com/leeguooooo/chatgpt-use.git", "commit": "ecb204d4f4a4aef127851240af17dcf1a321afbc", "version": "0.0.11", "license": "MIT", "integration": "ported delegation protocol and source reference; browser transport replaced"}
+}
