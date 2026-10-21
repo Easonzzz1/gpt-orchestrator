@@ -1,0 +1,3 @@
+{"usage":{"input_tokens":10000,"input_tokens_details":{"cached_tokens":0,"cache_write_tokens":8000},"output_tokens":500},"latency_ms":1500}
+{"usage":{"input_tokens":12000,"input_tokens_details":{"cached_tokens":8000,"cache_write_tokens":2000},"output_tokens":700},"latency_ms":1100}
+{"usage":{"prompt_tokens":8000,"prompt_tokens_details":{"cached_tokens":4000},"completion_tokens":300},"latency_ms":1000}

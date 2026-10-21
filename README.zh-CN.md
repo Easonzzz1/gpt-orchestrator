@@ -2,6 +2,8 @@
 
 # GPT Orchestrator：Chat 规划与审查，Codex 执行
 
+离线用量报告：`python3 scripts/usage_report.py examples/usage.synthetic.jsonl`。缓存输入仍属于总输入，缺失数据保留为未知，不推算订阅额度或账单。详见 [复盘方法](docs/MEASUREMENT.md)。
+
 一个可在 macOS / Linux 本地运行的 Python 项目。默认离线生成路由建议和任务书；需要模型时，优先用 Chat 做规划与审查，让 Codex 专注于修改代码、执行检查。文档/表格/幻灯片等任务输出 Work 交接材料。
 
 路由表达的是减少重复交接与限制调用次数的偏好，不能保证最低价格或某个额度池。使用限制以[官方说明](https://learn.chatgpt.com/docs/pricing)和实际账户页面为准。项目不读取账户配额，不使用 API Key，也不会把 Chat 订阅包装成官方 API。

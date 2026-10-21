@@ -38,6 +38,10 @@ See the Chinese guide for exact command sequences and failure recovery. Model pl
 - An adaptation of the MIT chatgpt-use delegation protocol, its original protocol source and license. This is not the upstream CLI or its browser transport.
 - An optional, experimental Playwright browser adapter with a dedicated manually logged-in profile. It does not export cookies or use private ChatGPT APIs. Read the security guide before opting in; it has not passed real ChatGPT integration testing.
 
+## Measure usage offline
+
+Run `python3 scripts/usage_report.py examples/usage.synthetic.jsonl` to summarize synthetic API usage. Cached input remains part of total input; missing counts remain unknown. No prices or subscription savings are inferred. See [measurement method](docs/MEASUREMENT.md).
+
 ## Test
 
 ```sh
